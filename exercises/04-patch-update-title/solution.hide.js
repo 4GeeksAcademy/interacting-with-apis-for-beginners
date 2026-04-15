@@ -8,8 +8,8 @@ async function solve(baseUrl) {
       title: "Patched title"
     })
   });
-  const data = await response.json();
-  return data.data.changed.title;
+  const result = await response.json();
+  return result.data.changed.title;
 }
 
 module.exports = solve;

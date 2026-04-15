@@ -8,8 +8,8 @@ async function solve(baseUrl) {
       done: true
     })
   });
-  const data = await response.json();
-  return data.data.changed.done;
+  const result = await response.json();
+  return result.data.changed.done;
 }
 
 module.exports = solve;

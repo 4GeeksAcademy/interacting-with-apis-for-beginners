@@ -4,8 +4,8 @@ async function solve(baseUrl) {
   });
 
   const getResponse = await fetch(`${baseUrl}/items/2`);
-  const getData = await getResponse.json();
-  return getData.error;
+  const getResult = await getResponse.json();
+  return getResult.error;
 }
 
 module.exports = solve;

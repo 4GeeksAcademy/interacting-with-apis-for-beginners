@@ -8,12 +8,12 @@ async function solve(baseUrl) {
       title: "Verify after create"
     })
   });
-  const createData = await createResponse.json();
-  const createdId = createData.data.item.id;
+  const createResult = await createResponse.json();
+  const createdId = createResult.data.item.id;
 
   const getResponse = await fetch(`${baseUrl}/items/${createdId}`);
-  const getData = await getResponse.json();
-  return getData.data.item.title;
+  const getResult = await getResponse.json();
+  return getResult.data.item.title;
 }
 
 module.exports = solve;

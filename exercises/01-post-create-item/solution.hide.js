@@ -8,8 +8,8 @@ async function solve(baseUrl) {
       title: "Practice POST requests"
     })
   });
-  const data = await response.json();
-  return data.data.item.id;
+  const result = await response.json();
+  return result.data.item.id;
 }
 
 module.exports = solve;
