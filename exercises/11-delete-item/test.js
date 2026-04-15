@@ -5,10 +5,14 @@ const { runExercise } = require("../../tests/shared/api-test-utils");
 runExercise({
   solve,
   validate(result) {
-    assert.strictEqual(result, 1);
+    if (result !== 1) {
+      assert.fail(`Expected the delete response to confirm item id 1, but received ${JSON.stringify(result)}.`);
+    }
   },
   negativeCheck(result) {
-    assert.notStrictEqual(result, 2);
+    if (result === 2) {
+      assert.fail("You returned the wrong deleted id. Double-check which item this exercise asks you to delete.");
+    }
   }
 }).catch((error) => {
   console.error(error);

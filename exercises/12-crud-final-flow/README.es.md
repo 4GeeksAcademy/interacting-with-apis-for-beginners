@@ -7,13 +7,13 @@ Dentro de `solve(baseUrl)`, haz esta secuencia:
 3. `PATCH /items/:id` para el item creado con `done: true`
 4. `DELETE /items/:id` para ese mismo item
 
-Retorna este objeto exacto:
+Despues de completar todo el flujo, tu funcion debe terminar produciendo este objeto exacto:
 
 ```js
 {
-  startCount: number,
-  createdId: number,
-  patchedDone: boolean,
-  deletedId: number
+  startCount: 2,
+  createdId: 3,
+  patchedDone: true,
+  deletedId: 3
 }
 ```

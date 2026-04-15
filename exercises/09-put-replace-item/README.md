@@ -24,10 +24,6 @@ Send a `PUT` request to `/items/1` with this body:
 }
 ```
 
-Return:
-
-```js
-response.data.item.profile["full name"]
-```
+Inspect the replacement response and find the nested value that confirms the new profile data was saved.
 
 Expected result: `"Mia Stone"`

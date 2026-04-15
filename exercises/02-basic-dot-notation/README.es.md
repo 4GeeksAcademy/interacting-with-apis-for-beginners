@@ -2,10 +2,6 @@
 
 Haz una peticion `GET /overview`.
 
-Retorna:
-
-```js
-response.user.profile.name
-```
+Inspecciona la respuesta e identifica el valor al que se llega usando propiedades anidadas.
 
 Resultado esperado: `"Ana"`

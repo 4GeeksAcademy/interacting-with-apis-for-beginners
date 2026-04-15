@@ -55,7 +55,7 @@ This tutorial teaches how to consume an API and extract values from nested JSON 
 ## Project structure
 
 - `api/`: local API used by the exercises.
-- `exercises/`: 12 incremental exercises.
+- `exercises/`: 1 welcome step plus 12 incremental exercises.
 - `tests/shared/`: helpers used by each exercise test.
 
 ## Suggested workflow

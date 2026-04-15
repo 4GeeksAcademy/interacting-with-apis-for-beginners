@@ -5,10 +5,14 @@ const { runExercise } = require("../../tests/shared/api-test-utils");
 runExercise({
   solve,
   validate(result) {
-    assert.strictEqual(result, "Marco Diaz");
+    if (result !== "Marco Diaz") {
+      assert.fail(`Expected the mixed-path lookup result to be "Marco Diaz", but received ${JSON.stringify(result)}.`);
+    }
   },
   negativeCheck(result) {
-    assert.notStrictEqual(result, "Ana Perez");
+    if (result === "Ana Perez") {
+      assert.fail("You found a valid full name, but it belongs to another branch of the JSON response.");
+    }
   }
 }).catch((error) => {
   console.error(error);

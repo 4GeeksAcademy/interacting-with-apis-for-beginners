@@ -2,10 +2,8 @@
 
 Create an async function called `solve(baseUrl)` in `app.js`.
 
-Make a `GET` request to `/overview` and return:
+Make a `GET` request to `/overview`.
 
-```js
-response.message
-```
+Inspect the JSON response and figure out which value produces the expected result below.
 
 Expected result: `"API is ready"`

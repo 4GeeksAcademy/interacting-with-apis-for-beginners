@@ -5,10 +5,14 @@ const { runExercise } = require("../../tests/shared/api-test-utils");
 runExercise({
   solve,
   validate(result) {
-    assert.strictEqual(result, "Ana");
+    if (result !== "Ana") {
+      assert.fail(`Expected the nested profile name from GET /overview to be "Ana", but received ${JSON.stringify(result)}.`);
+    }
   },
   negativeCheck(result) {
-    assert.notStrictEqual(result, "Luis");
+    if (result === "Luis") {
+      assert.fail('You probably navigated to the second person instead of the profile requested in this exercise.');
+    }
   }
 }).catch((error) => {
   console.error(error);

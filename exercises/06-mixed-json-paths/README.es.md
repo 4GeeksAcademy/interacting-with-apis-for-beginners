@@ -2,10 +2,6 @@
 
 Haz una peticion `GET /overview`.
 
-Retorna:
-
-```js
-response.data.orders[0].customer["full name"]
-```
+Inspecciona la respuesta y combina acceso por arreglo, por objeto y bracket notation hasta llegar al nombre esperado.
 
 Resultado esperado: `"Marco Diaz"`

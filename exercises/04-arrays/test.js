@@ -5,10 +5,14 @@ const { runExercise } = require("../../tests/shared/api-test-utils");
 runExercise({
   solve,
   validate(result) {
-    assert.strictEqual(result, 30);
+    if (result !== 30) {
+      assert.fail(`Expected the target score from the nested arrays to be 30, but received ${JSON.stringify(result)}.`);
+    }
   },
   negativeCheck(result) {
-    assert.notStrictEqual(result, 20);
+    if (result === 20) {
+      assert.fail("You are close, but this looks like a nearby score from the same array, not the final target value.");
+    }
   }
 }).catch((error) => {
   console.error(error);

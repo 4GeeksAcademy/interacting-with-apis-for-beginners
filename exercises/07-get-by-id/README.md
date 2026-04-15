@@ -6,10 +6,6 @@ Make this request:
 GET /items/2
 ```
 
-Return:
-
-```js
-response.data.item.profile["full name"]
-```
+Inspect the response and identify the nested value that matches the expected result.
 
 Expected result: `"Luis Gomez"`

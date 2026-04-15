@@ -2,10 +2,6 @@
 
 Haz una peticion `GET /overview`.
 
-Retorna:
-
-```js
-response.data.results[0].stats.scores[2]
-```
+Inspecciona la respuesta y navega por los arreglos hasta llegar al numero mostrado abajo.
 
 Resultado esperado: `30`

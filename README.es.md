@@ -55,7 +55,7 @@ Este tutorial ensena a consumir una API y extraer valores desde respuestas JSON 
 ## Estructura del proyecto
 
 - `api/`: API local usada por los ejercicios.
-- `exercises/`: 12 ejercicios incrementales.
+- `exercises/`: 1 paso de bienvenida mas 12 ejercicios incrementales.
 - `tests/shared/`: helpers compartidos para los tests.
 
 ## Flujo sugerido

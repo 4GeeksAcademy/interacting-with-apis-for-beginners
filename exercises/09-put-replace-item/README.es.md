@@ -24,10 +24,6 @@ Envia una peticion `PUT` a `/items/1` con este body:
 }
 ```
 
-Retorna:
-
-```js
-response.data.item.profile["full name"]
-```
+Inspecciona la respuesta del reemplazo y encuentra el valor anidado que confirma que el nuevo perfil fue guardado.
 
 Resultado esperado: `"Mia Stone"`

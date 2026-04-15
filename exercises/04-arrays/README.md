@@ -2,10 +2,6 @@
 
 Request `GET /overview`.
 
-Return:
-
-```js
-response.data.results[0].stats.scores[2]
-```
+Inspect the response and navigate through the array data until you reach the number shown below.
 
 Expected result: `30`

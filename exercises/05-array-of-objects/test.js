@@ -5,10 +5,14 @@ const { runExercise } = require("../../tests/shared/api-test-utils");
 runExercise({
   solve,
   validate(result) {
-    assert.strictEqual(result, "luis@example.com");
+    if (result !== "luis@example.com") {
+      assert.fail(`Expected the email inside the array of objects to be "luis@example.com", but received ${JSON.stringify(result)}.`);
+    }
   },
   negativeCheck(result) {
-    assert.notStrictEqual(result, "ana@example.com");
+    if (result === "ana@example.com") {
+      assert.fail("You returned the first contact email, but this exercise points to a different object in the array.");
+    }
   }
 }).catch((error) => {
   console.error(error);

@@ -5,10 +5,14 @@ const { runExercise } = require("../../tests/shared/api-test-utils");
 runExercise({
   solve,
   validate(result) {
-    assert.strictEqual(result, "1.0");
+    if (result !== "1.0") {
+      assert.fail(`Expected the API version from GET /overview to be "1.0", but received ${JSON.stringify(result)}.`);
+    }
   },
   negativeCheck(result) {
-    assert.notStrictEqual(result, "2.0");
+    if (result === "2.0") {
+      assert.fail("You are returning a version string, but not the one present in the current response.");
+    }
   }
 }).catch((error) => {
   console.error(error);

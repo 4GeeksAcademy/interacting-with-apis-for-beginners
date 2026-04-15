@@ -2,10 +2,6 @@
 
 Haz una peticion `GET /overview`.
 
-Retorna:
-
-```js
-response.data.results[1].contact.email
-```
+Inspecciona la respuesta y localiza el email guardado dentro de un arreglo de objetos.
 
 Resultado esperado: `"luis@example.com"`

@@ -2,10 +2,6 @@
 
 Request `GET /overview`.
 
-Return:
-
-```js
-response.data.orders[0].customer["full name"]
-```
+Inspect the response and combine array access, object access, and bracket notation until you reach the expected name.
 
 Expected result: `"Marco Diaz"`

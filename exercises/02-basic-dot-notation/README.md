@@ -2,10 +2,6 @@
 
 Request `GET /overview`.
 
-Return:
-
-```js
-response.user.profile.name
-```
+Inspect the response and identify the value accessed through nested object properties.
 
 Expected result: `"Ana"`

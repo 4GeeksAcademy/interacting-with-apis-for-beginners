@@ -2,10 +2,6 @@
 
 Request `GET /overview`.
 
-Return:
-
-```js
-response.meta["api-version"]
-```
+Inspect the response and find the value stored under a key that is easier to access with bracket notation.
 
 Expected result: `"1.0"`

@@ -8,10 +8,6 @@ Envia una peticion `PATCH` a `/items/2` con este body:
 }
 ```
 
-Retorna:
-
-```js
-response.data.changed.title
-```
+Inspecciona la respuesta e identifica el valor que demuestra que la actualizacion parcial funciono.
 
 Resultado esperado: `"Patched title"`

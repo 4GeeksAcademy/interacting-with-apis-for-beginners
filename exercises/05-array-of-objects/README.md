@@ -2,10 +2,6 @@
 
 Request `GET /overview`.
 
-Return:
-
-```js
-response.data.results[1].contact.email
-```
+Inspect the response and locate the email stored inside an array of objects.
 
 Expected result: `"luis@example.com"`
