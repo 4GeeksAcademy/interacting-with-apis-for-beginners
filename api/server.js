@@ -334,7 +334,7 @@ function createApp() {
   };
 }
 
-function startStandaloneServer(port = 3000) {
+function startStandaloneServer(port = 3001) {
   const app = createApp();
   const server = app.createServer();
   server.listen(port, "127.0.0.1", () => {

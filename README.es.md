@@ -36,7 +36,7 @@ npm run api
 
 En VS Code o Codespaces, el workspace tambien esta configurado para abrir una terminal dedicada y ejecutar `npm run api` automaticamente al abrir la carpeta.
 
-> Si estas trabajando en local, la API corre en `http://127.0.0.1:3000`.
+> Si estas trabajando en local, la API corre en `http://127.0.0.1:3001`.
 > Si estas trabajando en Codespaces u otro entorno en la nube, no asumas `localhost` desde tu computadora. Usa la URL reenviada por el entorno y pasa ese valor como `baseUrl` cuando sea necesario.
 
 <!-- endhide -->
