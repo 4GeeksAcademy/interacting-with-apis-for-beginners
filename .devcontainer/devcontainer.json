@@ -15,6 +15,5 @@
     }
   },
   "forwardPorts": [3000, 3001],
-  "onCreateCommand": "npm i jest@29.7.0 jest-environment-jsdom@29.7.0 -g && npm i @learnpack/learnpack@5.0.13 -g && learnpack plugins:install @learnpack/node@1.1.15",
-  "postAttachCommand": "bash -lc \"if ! pgrep -f 'node api/server.js' >/dev/null; then nohup npm run api >/tmp/interacting-api.log 2>&1 & fi\""
+  "onCreateCommand": "npm i jest@29.7.0 jest-environment-jsdom@29.7.0 -g && npm i @learnpack/learnpack@5.0.13 -g && learnpack plugins:install @learnpack/node@1.1.15"
 }
