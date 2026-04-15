@@ -12,6 +12,7 @@ This LearnPack helps students practice HTTP requests and JSON navigation with sm
 You can open this project in [Codespaces](https://codespaces.new/?repo=4GeeksAcademy/interacting-with-apis-for-beginners) or [Gitpod](https://gitpod.io#https://github.com/4GeeksAcademy/interacting-with-apis-for-beginners.git).
 
 > Once VS Code opens, LearnPack may start automatically. If it does not, run `learnpack start` from the folder that contains `learn.json`.
+> If Codespaces shows `bash: learnpack: command not found`, rebuild or recreate the container so the `.devcontainer` setup installs LearnPack, or run `npm install -g @learnpack/learnpack && learnpack plugins:install @learnpack/node@1.1.15`.
 
 ## Local installation
 
@@ -82,6 +83,10 @@ This tutorial teaches how to consume an API and extract values from nested JSON 
 
 ## Contributors
 
-Contributions, fixes, and wording improvements are welcome. If you spot an issue, feel free to open a pull request or contribute directly.
+Thanks goes to everyone who improves these exercises with fixes, wording updates, new tests, and better learning guidance.
 
-This project follows the spirit of the [all-contributors](https://allcontributors.org/) specification, and every contribution that improves the learning experience matters.
+Contributions of any kind are welcome. If you spot an issue, feel free to open a pull request or contribute directly.
+
+This project follows the spirit of the [all-contributors](https://allcontributors.org/) specification.
+
+This and many other coding exercises are built for students at [4Geeks Academy](https://4geeksacademy.com/). Learn more about the [Full Stack Developer program](https://4geeksacademy.com/us/coding-bootcamp) and other learning experiences available at 4Geeks.

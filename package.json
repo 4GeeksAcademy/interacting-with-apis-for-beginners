@@ -5,6 +5,7 @@
   "type": "commonjs",
   "scripts": {
     "api": "node api/server.js",
-    "test:sample": "node exercises/01-first-get/test.js"
+    "test:sample": "node exercises/01-first-get/test.js",
+    "setup:learnpack": "npm i @learnpack/learnpack@5.0.13 -g && learnpack plugins:install @learnpack/node@1.1.15"
   }
 }

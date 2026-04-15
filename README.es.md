@@ -12,6 +12,7 @@ Este LearnPack ayuda a practicar peticiones HTTP y navegacion de JSON con ejerci
 Puedes abrir este proyecto en [Codespaces](https://codespaces.new/?repo=4GeeksAcademy/interacting-with-apis-for-beginners) o [Gitpod](https://gitpod.io#https://github.com/4GeeksAcademy/interacting-with-apis-for-beginners.git).
 
 > Una vez abierto VS Code, LearnPack puede iniciar automaticamente. Si no ocurre, ejecuta `learnpack start` desde la carpeta que contiene `learn.json`.
+> Si en Codespaces aparece `bash: learnpack: command not found`, reconstruye o recrea el contenedor para que `.devcontainer` instale LearnPack, o ejecuta `npm install -g @learnpack/learnpack && learnpack plugins:install @learnpack/node@1.1.15`.
 
 ## Instalacion local
 
@@ -82,6 +83,10 @@ Este tutorial ensena a consumir una API y extraer valores desde respuestas JSON 
 
 ## Colaboradores
 
-Las contribuciones, correcciones y mejoras de redaccion son bienvenidas. Si encuentras un problema, puedes abrir un pull request o contribuir directamente.
+Gracias a todas las personas que mejoran estos ejercicios con correcciones, cambios de redaccion, nuevos tests y mejores explicaciones para estudiantes.
 
-Este proyecto sigue el espiritu de la especificacion [all-contributors](https://allcontributors.org/), y cualquier aporte que mejore la experiencia de aprendizaje suma.
+Todo tipo de contribucion es bienvenido. Si encuentras un problema, puedes abrir un pull request o contribuir directamente.
+
+Este proyecto sigue el espiritu de la especificacion [all-contributors](https://allcontributors.org/).
+
+Este y muchos otros ejercicios fueron creados para estudiantes de [4Geeks Academy](https://4geeksacademy.com/). Puedes conocer mas sobre el [programa Full Stack Developer](https://4geeksacademy.com/us/coding-bootcamp) y otras experiencias de aprendizaje de 4Geeks.
