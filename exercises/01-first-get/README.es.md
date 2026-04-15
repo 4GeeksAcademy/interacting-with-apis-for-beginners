@@ -1,6 +1,6 @@
 # `01` First GET
 
-Crea una funcion async llamada `solve(baseUrl)` en `app.js`.
+Completa la funcion async `solve(baseUrl)` que ya existe en `app.js`.
 
 Haz una peticion `GET` a `/overview`.
 
