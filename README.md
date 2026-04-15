@@ -5,7 +5,7 @@
 
 _These instructions are [available in Spanish](./README.es.md)._
 
-This LearnPack helps students practice HTTP requests and JSON navigation with small, auto-graded JavaScript exercises.
+This LearnPack helps students practice RESTful API interactions with small, auto-graded JavaScript exercises.
 
 ## Before you start
 
@@ -41,21 +41,21 @@ In VS Code or Codespaces, the workspace is also configured to open a dedicated t
 
 <!-- endhide -->
 
-This tutorial teaches how to consume an API and extract values from nested JSON responses using JavaScript.
+This tutorial teaches how to create, replace, update, delete, and verify resources through a RESTful API using JavaScript.
 
 ## What students will practice
 
-- Reading flat values from JSON responses.
-- Accessing nested objects with dot notation.
-- Accessing keys with spaces or dashes using bracket notation.
-- Reading arrays and arrays of objects.
-- Mixing object and array access in the same path.
-- Making `GET`, `POST`, `PUT`, `PATCH`, and `DELETE` requests.
+- Creating resources with `POST`.
+- Replacing resources with `PUT`.
+- Partially updating resources with `PATCH`.
+- Deleting resources with `DELETE`.
+- Verifying server state with follow-up `GET` requests.
+- Reading status codes such as `201`, `200`, `204`, and `404`.
 
 ## Project structure
 
 - `api/`: local API used by the exercises.
-- `exercises/`: 1 welcome step plus 12 incremental exercises.
+- `exercises/`: 1 welcome step plus 8 incremental exercises.
 - `tests/shared/`: helpers used by each exercise test.
 
 ## Suggested workflow
@@ -69,7 +69,6 @@ This tutorial teaches how to consume an API and extract values from nested JSON 
 
 ## API endpoints
 
-- `GET /overview`
 - `GET /items`
 - `GET /items/:id`
 - `POST /items`

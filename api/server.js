@@ -93,14 +93,25 @@ function createApp() {
   let items = createInitialItems();
   let nextId = 3;
 
-  function sendJson(res, statusCode, payload) {
+  function sendJson(res, statusCode, payload, extraHeaders = {}) {
     res.writeHead(statusCode, {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET,POST,PUT,PATCH,DELETE,OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type"
+      "Access-Control-Allow-Headers": "Content-Type",
+      ...extraHeaders
     });
     res.end(JSON.stringify(payload));
+  }
+
+  function sendNoContent(res, extraHeaders = {}) {
+    res.writeHead(204, {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET,POST,PUT,PATCH,DELETE,OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
+      ...extraHeaders
+    });
+    res.end();
   }
 
   function notFound(res, message = "Resource not found") {
@@ -254,13 +265,7 @@ function createApp() {
 
       if (method === "DELETE") {
         items = items.filter((entry) => entry.id !== id);
-        sendJson(res, 200, {
-          message: "Item deleted",
-          data: {
-            deletedId: id,
-            remainingCount: items.length
-          }
-        });
+        sendNoContent(res);
         return;
       }
     }
@@ -313,6 +318,8 @@ function createApp() {
             createdAt: "2026-04-13T00:00:00.000Z"
           }
         }
+      }, {
+        Location: `/items/${item.id}`
       });
       return;
     }

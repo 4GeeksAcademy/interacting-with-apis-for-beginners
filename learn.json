@@ -7,8 +7,8 @@
     "es": "API y Navegacion de JSON Complejo"
   },
   "description": {
-    "us": "Practice GET, POST, PUT, PATCH and DELETE requests while extracting values from nested JSON responses using JavaScript.",
-    "es": "Practica peticiones GET, POST, PUT, PATCH y DELETE mientras extraes valores de respuestas JSON anidadas usando JavaScript."
+    "us": "Practice RESTful API interactions with POST, PUT, PATCH, DELETE, and follow-up GET requests using JavaScript.",
+    "es": "Practica interacciones RESTful con APIs usando POST, PUT, PATCH, DELETE y verificaciones posteriores con GET en JavaScript."
   },
   "projectType": "tutorial",
   "template_url": "self",
@@ -20,7 +20,8 @@
     "json",
     "rest api",
     "fetch",
-    "http"
+    "http",
+    "crud"
   ],
   "videoSolutions": false,
   "bugsLink": "https://github.com/learnpack/learnpack/issues/new",

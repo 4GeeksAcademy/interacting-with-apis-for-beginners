@@ -5,7 +5,7 @@
 
 _Estas instrucciones estan [disponibles en ingles](./README.md)._
 
-Este LearnPack ayuda a practicar peticiones HTTP y navegacion de JSON con ejercicios pequenos y autoevaluados en JavaScript.
+Este LearnPack ayuda a practicar interacciones RESTful con APIs mediante ejercicios pequenos y autoevaluados en JavaScript.
 
 ## Antes de comenzar
 
@@ -41,21 +41,21 @@ En VS Code o Codespaces, el workspace tambien esta configurado para abrir una te
 
 <!-- endhide -->
 
-Este tutorial ensena a consumir una API y extraer valores desde respuestas JSON anidadas usando JavaScript.
+Este tutorial ensena a crear, reemplazar, actualizar, eliminar y verificar recursos a traves de una API RESTful usando JavaScript.
 
 ## Que practicara el estudiante
 
-- Leer valores planos desde respuestas JSON.
-- Acceder a objetos anidados con dot notation.
-- Acceder a claves con espacios o guiones usando bracket notation.
-- Leer arreglos y arreglos de objetos.
-- Mezclar acceso por objeto y arreglo en una misma ruta.
-- Hacer peticiones `GET`, `POST`, `PUT`, `PATCH` y `DELETE`.
+- Crear recursos con `POST`.
+- Reemplazar recursos con `PUT`.
+- Actualizar recursos parcialmente con `PATCH`.
+- Eliminar recursos con `DELETE`.
+- Verificar el estado del servidor con peticiones `GET` posteriores.
+- Leer status codes como `201`, `200`, `204` y `404`.
 
 ## Estructura del proyecto
 
 - `api/`: API local usada por los ejercicios.
-- `exercises/`: 1 paso de bienvenida mas 12 ejercicios incrementales.
+- `exercises/`: 1 paso de bienvenida mas 8 ejercicios incrementales.
 - `tests/shared/`: helpers compartidos para los tests.
 
 ## Flujo sugerido
@@ -69,7 +69,6 @@ Este tutorial ensena a consumir una API y extraer valores desde respuestas JSON 
 
 ## Endpoints de la API
 
-- `GET /overview`
 - `GET /items`
 - `GET /items/:id`
 - `POST /items`

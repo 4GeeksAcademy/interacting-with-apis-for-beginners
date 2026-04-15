@@ -1,11 +1,11 @@
 {
   "name": "interacting-with-apis-for-beginners",
   "version": "1.0.0",
-  "description": "LearnPack incremental exercises to practice API requests and complex JSON navigation.",
+  "description": "LearnPack incremental exercises to practice RESTful API interactions with JavaScript.",
   "type": "commonjs",
   "scripts": {
     "api": "node api/server.js",
-    "test:sample": "node exercises/01-first-get/test.js",
+    "test:sample": "jest \"exercises/01-post-create-item/test.js\" --runInBand",
     "setup:learnpack": "npm i @learnpack/learnpack@5.0.13 -g && learnpack plugins:install @learnpack/node@1.1.15"
   }
 }
