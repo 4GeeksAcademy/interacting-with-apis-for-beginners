@@ -34,6 +34,8 @@ learnpack start
 npm run api
 ```
 
+In VS Code or Codespaces, the workspace is also configured to open a dedicated terminal and run `npm run api` automatically when the folder opens.
+
 > If you are working locally, the API runs at `http://127.0.0.1:3000`.
 > If you are working in Codespaces or another cloud environment, do not assume `localhost` from your own computer. Use the forwarded URL provided by the environment and pass that value as `baseUrl` when needed.
 
