@@ -1,16 +1,44 @@
-# API y Navegacion de JSON Complejo
+# Interactuando Con APIs Para Principiantes
 
 <!-- hide -->
-
-Por [@4GeeksAcademy](https://github.com/4GeeksAcademy) y contribuidores de [4Geeks Academy](https://4geeksacademy.com/)
+> Por [@ehiber](https://github.com/ehibe) y [colaboradores](https://github.com/4GeeksAcademy/interacting-with-apis-for-beginners/graphs/contributors) de [4Geeks Academy](https://4geeksacademy.com/)
 
 _Estas instrucciones estan [disponibles en ingles](./README.md)._
 
-**Antes de comenzar**: Revisa el flujo basico para proyectos de codigo y ejercicios de LearnPack.
+Este LearnPack ayuda a practicar peticiones HTTP y navegacion de JSON con ejercicios pequenos y autoevaluados en JavaScript.
+
+## Antes de comenzar
+
+Puedes abrir este proyecto en [Codespaces](https://codespaces.new/?repo=4GeeksAcademy/interacting-with-apis-for-beginners) o [Gitpod](https://gitpod.io#https://github.com/4GeeksAcademy/interacting-with-apis-for-beginners.git).
+
+> Una vez abierto VS Code, LearnPack puede iniciar automaticamente. Si no ocurre, ejecuta `learnpack start` desde la carpeta que contiene `learn.json`.
+
+## Instalacion local
+
+1. Instala LearnPack de forma global y asegurate de tener Node.js 16+:
+
+```bash
+npm install -g @learnpack/learnpack
+```
+
+2. Desde la raiz del proyecto, inicia el tutorial:
+
+```bash
+learnpack start
+```
+
+3. En una segunda terminal, inicia la API local de practica:
+
+```bash
+npm run api
+```
+
+> Si estas trabajando en local, la API corre en `http://127.0.0.1:3000`.
+> Si estas trabajando en Codespaces u otro entorno en la nube, no asumas `localhost` desde tu computadora. Usa la URL reenviada por el entorno y pasa ese valor como `baseUrl` cuando sea necesario.
 
 <!-- endhide -->
 
-Este LearnPack ensena a consumir una API local y extraer valores de JSON anidado usando JavaScript.
+Este tutorial ensena a consumir una API y extraer valores desde respuestas JSON anidadas usando JavaScript.
 
 ## Que practicara el estudiante
 
@@ -25,17 +53,18 @@ Este LearnPack ensena a consumir una API local y extraer valores de JSON anidado
 
 - `api/`: API local usada por los ejercicios.
 - `exercises/`: 12 ejercicios incrementales.
-- `tests/shared/`: helpers usados por los tests.
+- `tests/shared/`: helpers compartidos para los tests.
 
-## Ejecutar la API local
+## Flujo sugerido
 
-```bash
-npm run api
-```
+1. Ejecuta `learnpack start` desde la raiz del proyecto.
+2. Ejecuta `npm run api` en una terminal separada.
+3. Abre una carpeta de ejercicio y completa `app.js`.
+4. Lee el enunciado para decidir a que endpoint llamar.
+5. Retorna el valor esperado desde `solve(baseUrl)`.
+6. Usa el feedback de LearnPack para iterar hasta pasar el test.
 
-La API inicia en `http://127.0.0.1:3000`.
-
-Tambien puedes probarla en Postman usando:
+## Endpoints de la API
 
 - `GET /overview`
 - `GET /items`
@@ -45,16 +74,14 @@ Tambien puedes probarla en Postman usando:
 - `PATCH /items/:id`
 - `DELETE /items/:id`
 
-## Flujo para el estudiante
-
-1. Abre una carpeta de ejercicio.
-2. Completa `app.js`.
-3. Usa el enunciado para decidir a que endpoint llamar.
-4. Retorna el valor esperado desde `solve(baseUrl)`.
-5. Ejecuta el test del ejercicio en LearnPack.
-
 ## Notas
 
-- La API es local y deterministica.
+- La API es deterministica y se reinicia cada vez que el servidor vuelve a arrancar.
 - No requiere autenticacion.
-- Los datos se reinician cada vez que la API se reinicia.
+- Postman o Thunder Client pueden ayudarte a inspeccionar las respuestas mientras resuelves los ejercicios.
+
+## Colaboradores
+
+Las contribuciones, correcciones y mejoras de redaccion son bienvenidas. Si encuentras un problema, puedes abrir un pull request o contribuir directamente.
+
+Este proyecto sigue el espiritu de la especificacion [all-contributors](https://allcontributors.org/), y cualquier aporte que mejore la experiencia de aprendizaje suma.
