@@ -1,0 +1,47 @@
+{
+  "slug": "api-json-navigation-learnpack",
+  "duration": 8,
+  "difficulty": "intermediate",
+  "title": {
+    "us": "API and Complex JSON Navigation",
+    "es": "API y Navegacion de JSON Complejo"
+  },
+  "description": {
+    "us": "Practice GET, POST, PUT, PATCH and DELETE requests while extracting values from nested JSON responses using JavaScript.",
+    "es": "Practica peticiones GET, POST, PUT, PATCH y DELETE mientras extraes valores de respuestas JSON anidadas usando JavaScript."
+  },
+  "projectType": "tutorial",
+  "template_url": "self",
+  "repository": "https://github.com/4GeeksAcademy/interacting-with-apis-for-beginners",
+  "autoPlay": true,
+  "gitpod": true,
+  "technologies": [
+    "javascript",
+    "json",
+    "rest api",
+    "fetch",
+    "http"
+  ],
+  "videoSolutions": false,
+  "bugsLink": "https://github.com/learnpack/learnpack/issues/new",
+  "graded": true,
+  "grading": "isolated",
+  "localhostOnly": true,
+  "editor": {
+    "version": "5.0",
+    "agent": "vscode",
+    "mode": "extension"
+  },
+  "entries": {
+    "node": "app.js"
+  },
+  "delivery": {
+    "formats": [
+      "no_delivery"
+    ]
+  },
+  "translations": [
+    "es",
+    "en"
+  ]
+}

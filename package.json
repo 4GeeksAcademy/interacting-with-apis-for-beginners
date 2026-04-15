@@ -1,0 +1,10 @@
+{
+  "name": "api-json-navigation-learnpack",
+  "version": "1.0.0",
+  "description": "LearnPack incremental exercises to practice API requests and complex JSON navigation.",
+  "type": "commonjs",
+  "scripts": {
+    "api": "node api/server.js",
+    "test:sample": "node exercises/01-first-get/test.js"
+  }
+}
