@@ -1,47 +1,37 @@
 {
-  "slug": "interacting-with-apis-for-beginners",
-  "duration": 8,
-  "difficulty": "intermediate",
-  "title": {
-    "us": "API and Complex JSON Navigation",
-    "es": "API y Navegación de JSON Complejo"
-  },
-  "description": {
-    "us": "Practice RESTful API interactions with POST, PUT, PATCH, DELETE, and follow-up GET requests using JavaScript.",
-    "es": "Practica interacciones RESTful con APIs usando POST, PUT, PATCH, DELETE y consultas posteriores con GET en JavaScript."
-  },
-  "projectType": "tutorial",
-  "template_url": "self",
-  "repository": "https://github.com/4GeeksAcademy/interacting-with-apis-for-beginners",
-  "preview": "https://raw.githubusercontent.com/4GeeksAcademy/interacting-with-apis-for-beginners/main/.learn/preview.png",
-  "sharing": [
-    {
-      "en": "I just completed API and Complex JSON Navigation with LearnPack @4GeeksAcademy. Check it out: https://github.com/4GeeksAcademy/interacting-with-apis-for-beginners #AIEngineering #LearnPack #4GeeksAcademy #javascript #json #restapi",
-      "es": "Acabo de completar API y Navegacion de JSON Complejo con LearnPack @4GeeksAcademy. Mira el proyecto: https://github.com/4GeeksAcademy/interacting-with-apis-for-beginners #AIEngineering #LearnPack #4GeeksAcademy #javascript #json #restapi"
+    "slug": "interacting-with-apis-for-beginners",
+    "title": {
+        "us": "API and Complex JSON Navigation",
+        "es": "API y Navegaci\u00f3n de JSON Complejo"
     },
-    {
-      "en": "Built and shipped: API and Complex JSON Navigation. Learning by building with @4GeeksAcademy. https://github.com/4GeeksAcademy/interacting-with-apis-for-beginners #AIEngineering #LearnPack #4GeeksAcademy #javascript #json #restapi",
-      "es": "Construido y publicado: API y Navegacion de JSON Complejo. Aprendiendo con proyectos reales en @4GeeksAcademy. https://github.com/4GeeksAcademy/interacting-with-apis-for-beginners #AIEngineering #LearnPack #4GeeksAcademy #javascript #json #restapi"
+    "description": {
+        "us": "Practice RESTful API interactions with POST, PUT, PATCH, DELETE, and follow-up GET requests using JavaScript.",
+        "es": "Practica interacciones RESTful con APIs usando POST, PUT, PATCH, DELETE y consultas posteriores con GET en JavaScript."
+    },
+    "preview": "https://github.com/4GeeksAcademy/interacting-with-apis-for-beginners/blob/main/preview.png?raw=true",
+    "difficulty": "EASY",
+    "duration": 8,
+    "template_url": null,
+    "gitpod": true,
+    "technologies": [
+        "javascript",
+        "json",
+        "rest-api",
+        "fetch-api",
+        "HTTP",
+        "crud"
+    ],
+    "projectType": "tutorial",
+    "editor": {
+        "agent": "vscode"
+    },
+    "grading": "incremental",
+    "localhostOnly": false,
+    "delivery": {
+        "instructions": "",
+        "formats": [
+            "no_delivery"
+        ],
+        "regex": ""
     }
-  ],
-  "autoPlay": true,
-  "gitpod": true,
-  "technologies": ["javascript", "json", "rest api", "fetch", "http", "crud"],
-  "videoSolutions": false,
-  "bugsLink": "https://github.com/learnpack/learnpack/issues/new",
-  "graded": true,
-  "grading": "isolated",
-  "localhostOnly": true,
-  "editor": {
-    "version": "5.0",
-    "agent": "vscode",
-    "mode": "extension"
-  },
-  "entries": {
-    "node": "app.js"
-  },
-  "delivery": {
-    "formats": ["no_delivery"]
-  },
-  "translations": ["es", "en"]
 }
